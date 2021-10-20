@@ -19,11 +19,11 @@ import com.google.common.collect.Table.Cell;
 public class RegisterationTest {
 
 	public static void main(String[] args) throws IOException {
-		System.setProperty("webdriver.chrome.driver", "C:\\\\\\\\Users\\\\\\\\user\\\\\\\\eclipse-workspace\\\\\\\\JavaProject\\\\\\\\chromedriver_win32\\\\\\\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "path");
 		WebDriver driver=new ChromeDriver();
 		driver.get("https://demo.nopcommerce.com/");
 		driver.findElement(By.linkText("Register")).click();
-		FileInputStream file=new FileInputStream("C:\\\\Users\\\\user\\\\Desktop\\\\New folder\\\\seleniumpractise\\\\book2.xlsx");
+		FileInputStream file=new FileInputStream("path");
 		XSSFWorkbook workbook =new XSSFWorkbook(file);
 		XSSFSheet sheet= workbook.getSheet("Sheet2");
 		System.out.println(sheet);
@@ -61,7 +61,7 @@ public class RegisterationTest {
 				driver.findElement(By.name("Email")).sendKeys(email);
 				driver.findElement(By.name("Password")).sendKeys(password);
 				driver.findElement(By.name("ConfirmPassword")).sendKeys(password);	
-//				driver.findElement(By.name("ConfirmPassword")).sendKeys(String.valueOf(password));//password numerical anel convert to string 	
+//				driver.findElement(By.name("ConfirmPassword")).sendKeys(String.valueOf(password));	
 				
 				//dropdownlist -date of birth 
 				Select day=new Select(driver.findElement(By.name("DateOfBirthDay")));
