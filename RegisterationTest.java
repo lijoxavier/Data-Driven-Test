@@ -2,6 +2,7 @@ package datadriventest;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
 
 
@@ -19,11 +20,11 @@ import com.google.common.collect.Table.Cell;
 public class RegisterationTest {
 
 	public static void main(String[] args) throws IOException {
-		System.setProperty("webdriver.chrome.driver", "path");
+		System.setProperty("webdriver.chrome.driver", "C:\\\\Users\\\\user\\\\eclipse-workspace\\\\JavaProject\\\\chromedriver_win32\\\\chromedriver.exe");
 		WebDriver driver=new ChromeDriver();
 		driver.get("https://demo.nopcommerce.com/");
 		driver.findElement(By.linkText("Register")).click();
-		FileInputStream file=new FileInputStream("path");
+		FileInputStream file=new FileInputStream("C:\\\\\\\\Users\\\\\\\\user\\\\\\\\Desktop\\\\\\\\New folder\\\\\\\\seleniumpractise\\\\\\\\book2.xlsx");
 		XSSFWorkbook workbook =new XSSFWorkbook(file);
 		XSSFSheet sheet= workbook.getSheet("Sheet2");
 		System.out.println(sheet);
