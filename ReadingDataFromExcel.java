@@ -11,7 +11,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 public class ReadingDataFromExcel {
 
 	public static void main(String[] args) throws IOException {
-		FileInputStream file=new FileInputStream("C:\\Users\\user\\Desktop\\New folder\\seleniumpractise\\book2.xlsx");
+		FileInputStream file=new FileInputStream("path");
 		//FileInputStream is used for reading the excel sheet
 		//FileOutStream is used for writing the excel sheet
 		XSSFWorkbook workbook =new XSSFWorkbook(file);
