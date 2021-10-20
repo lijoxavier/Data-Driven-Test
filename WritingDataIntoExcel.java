@@ -11,7 +11,8 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 public class WritingDataIntoExcel {
 
 	public static void main(String[] args) throws IOException {
-		FileOutputStream file=new FileOutputStream("C:\\\\\\\\Users\\\\\\\\user\\\\\\\\Desktop\\\\\\\\New folder\\\\\\\\seleniumpractise\\\\\\\\book2.xlsx");
+//		FileOutputStream file=new FileOutputStream("C:\\\\\\\\Users\\\\\\\\user\\\\\\\\Desktop\\\\\\\\New folder\\\\\\\\seleniumpractise\\\\\\\\book2.xlsx");
+		FileOutputStream file=new FileOutputStream("path");
 		XSSFWorkbook workbook =new XSSFWorkbook();
 		XSSFSheet sheet= workbook.createSheet("Sheet3");
 		for(int i=0;i<5;i++) {
